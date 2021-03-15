@@ -1,0 +1,55 @@
+What is HTTP?
+    Hypertext Transfer Protocol for trasmitting html (hypermedia documents). Basis for data exchange on the web.
+
+What is a URL?
+    Uniform Resource Locator. Address of a webpage in network to retrieve its data.
+
+What is DNS?
+    Domain Name System. Numiercal naming system for the machines connected to private network or the Internet. Translates to IP address.
+
+What is a query string?
+    Part of a URL after the "?". Passes search parameter data to web app and back-end. Part of a dynamic URL. Happens because you searched something in an input or something.
+
+What are two HTTP verbs and how are they different?
+    GET is to request and retrieve data from server. POST submits and changes data in server.
+
+What is an HTTP request?
+    HTTP verbs synonym. Methods in which to do an action pertaining to something HTTP.
+
+What is an HTTP response?
+    3 digit codes that represent if the HTTP request was completed or not and why (vague).
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+    HTTP headers come with each HTTP requests and responses and provide more info. 
+Request:
+    Request URL: https://www.youtube.com/s/player/d29f3109/www-player-webp.css
+    Request Method: GET
+    Status Code: 200  (from memory cache)
+    Referrer Policy: strict-origin-when-cross-origin
+Response:
+    accept-ranges: bytes
+    age: 52206
+    alt-svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+    cache-control: public, max-age=31536000
+    content-encoding: gzip
+    content-length: 52229
+    content-type: text/css
+    cross-origin-resource-policy: cross-origin
+    date: Thu, 11 Mar 2021 15:45:42 GMT
+    expires: Fri, 11 Mar 2022 15:45:42 GMT
+    last-modified: Thu, 11 Mar 2021 03:47:17 GMT
+    server: sffe
+    vary: Accept-Encoding, Origin
+    x-content-type-options: nosniff
+    x-xss-protection: 0
+(I put youtube.com in the search bar)
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+    Browser sends GET requests
+    HTTP headers also sent
+    Status codes returns 200
+    Server/Internet sends back HTTP response with HTTP Headers for each request
+    Looks like 4 GETs and one OPTION request happened
+    One GET failed because of my Adblock
+
+Looked at answers and it seems some of my answers were off the mark.

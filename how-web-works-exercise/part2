@@ -1,0 +1,12 @@
+$ curl -H "Accept: text/plan" https://icanhazdadjoke.com/search?term=pirate
+    What does a pirate pay for his corn? A buccaneer!
+    What did the pirate say on his 80th birthday? Aye Matey!
+    Why couldn't the kid see the pirate movie? Because it was rated arrr!
+    Why do pirates not know the alphabet? They always get stuck at "C".
+    Why are pirates called pirates? Because they arrr!
+
+$ dig icanhazdadjoke.com +short
+    104.21.37.176
+    172.67.211.64
+
+I changed the directory to the parent file and tried to make a python3 server but it kept throwing a permission denied error. The live server on works though. Localhost:5500.
