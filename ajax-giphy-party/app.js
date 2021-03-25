@@ -7,17 +7,19 @@ function appendGif(res){
     // let dataLength = res.data.length;
     // if (dataLength){
         // why use an if statement at all
-        let gifIndex = Math.floor(Math.random() * res.data.length);
-        let gifDiv = $(`<div>`);
-        let gif = $(`<img>`, {
-            // src: res.data.data[gifIndex].images.downsized.url
-            src: res.data[gifIndex].images.original.url
-            // why
-        });
-        gifDiv.append(gif);
-        gifs.append(gifDiv);
-    }
-// };
+        let numResults = res.data.length;
+        if (numResults){
+            let gifIndex = Math.floor(Math.random() * numResults);
+            let gifDiv = $(`<div>`);
+            let gif = $(`<img>`, {
+                // src: res.data.data[gifIndex].images.downsized.url
+                src: res.data[gifIndex].images.original.url
+                // why
+            });
+            gifDiv.append(gif);
+            gifs.append(gifDiv);
+        }
+    };
 
 $(`#form`).on("submit", async function(evt) {
     evt.preventDefault();
